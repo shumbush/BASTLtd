@@ -63,6 +63,7 @@ header.shadow #search-icon{
 }
 .nav{
   display: flex;
+  width: 100%;
   align-items: space-between;
   padding: 20px 35px;
   
@@ -89,7 +90,6 @@ header.shadow #search-icon{
   width: 10%;
   height: 60px;
   background-color: #315b7794;
-  margin-left: -100px;
   border-radius: 50%;
 } 
 .navbar{
@@ -307,6 +307,50 @@ header.shadow #search-icon{
   color:var(--main-color);
   text-decoration: underline;
 }
+/* ****Contact***** */
+
+.Contact-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.Contact-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.Contact-container .box{
+  flex: 1 1 13rem;
+  padding: 20px;
+}
+.Contact-container .box:hover{
+  background: #f6f6f6;
+}
+.Contact-container .box span{
+  font-size: 0.8rem;
+  color: var(--main-color);
+}
+.Contact-container .box h3{
+  font-size: 1.2rem;
+}
+.Contact-container .box p{
+  font-size: 0.933rem;
+  margin: 4px 0;
+}
+.Contact-container .box .blog-btn{
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  color: var(--text-color);
+}
+.Contact-container .box .Contact-btn:hover{
+  color: var(--main-color);
+  column-gap: 0.7rem;
+  transition: 0.4sec;
+}
+/* ********blog********** */
 .blog-container{
   display: flex;
   flex-wrap: wrap;
