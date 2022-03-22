@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="upload.css">
+    <title>Git Course</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" id="spn">BSAS<span>PLtd</span></a>
+        <button type="submit" class="create-btn">UpLoad</button>
+        <a href="index.html"><button  class="logout-btn">Logout</button></a>
+    </div>
+    <div class="loading"></div>
+    <div class="articles"></div>
+
+    <div class="form-container">
+        <form class="add-article-form">
+            <div class="alert"></div>
+            <h1>Add New Article</h1>
+            <div class="form-input">
+                <label for="title">Image Url</label>
+                <input type="text" name="image" id="image" placeholder="image url">
+            </div>
+            <div class="form-input">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" placeholder="Title">
+            </div>
+            <div class="form-input">
+                <label for="content">Content</label>
+                <textarea name="content" id="content" cols="30" rows="6" placeholder="Content"></textarea>
+            </div>
+            <div class="form-button">
+                <button class="add-article-btn">Add Article</button>
+                <button class="update-article-btn">Update Article</button>
+                <button type="reset" class="close-modal">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- <h1>Git Course</h1>
+
+    <form id="register">
+        <input type="email" id="email" name="email" placeholder="Email">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <input type="submit" value="Register">
+    </form>
+
+    <script>
+
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCDC_Fr59RYH5mFtMT2qES1SaLm2uejH0A",
+            authDomain: "personal-website-664ca.firebaseapp.com",
+            databaseURL: "https://personal-website-664ca.firebaseio.com",
+            projectId: "personal-website-664ca",
+            storageBucket: "personal-website-664ca.appspot.com",
+            messagingSenderId: "138869735689",
+            appId: "1:138869735689:web:2cdcfd8a88977e022453d8",
+            measurementId: "G-N5VFQ4H262"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore()
+        // Your web app's Firebase configuration
+
+        const auth = firebase.auth();
+
+        const signupForm = document.querySelector('#register');
+        signupForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // get user info
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            localStorage.email = email;
+            localStorage.password = password;
+
+            console.log(email, password);
+            // sign up the user
+            //auth.createUserWithEmailAndPassword(email, password).then(cred => {
+            //  console.log("CREATED USER", cred.user.uid);
+            //   signupForm.reset();
+            // });
+
+            auth.signInWithEmailAndPassword(email, password).then((cred) => {
+                console.log(cred.user);
+                signupForm.reset();
+            });
+        });
+    </script> -->
+    <script src="https://kit.fontawesome.com/65ed1d5114.js" crossorigin="anonymous"></script>
+    <script src="config.js"></script>
+    <script src="uploader.js"></script>
+</body>
+
+</html>
