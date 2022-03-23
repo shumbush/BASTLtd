@@ -524,7 +524,7 @@ header.shadow #search-icon {
 }
 
 .show {
-  display: flex!important;
+  display: flex !important;
 }
 
 #menu-bar {
@@ -591,4 +591,23 @@ header.shadow #search-icon {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+.loading {
+  width: 50px;
+  height: 50px;
+  border: 5px solid lightblue;
+  border-radius: 50%;
+  margin: 10px auto;
+  border-top: 5px solid #fff;
+  animation: rotate 0.8s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

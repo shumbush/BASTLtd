@@ -1,3 +1,6 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
 
 body{
     margin: 0;
@@ -41,7 +44,7 @@ body{
     margin: 20px;
 }
 
-.login-box input[type="text"],
+.login-box input[type="email"],
 .login-box input[type="password"]{
     border: none;
     border-bottom: 1px solid #fff;
@@ -62,4 +65,23 @@ body{
 }
 .login-box input[type="submit"]:hover {
     background: rgb(210, 231, 181);
+}
+
+.snackbar{
+    color: rgb(175, 13, 13);
+    background-color: rgb(175, 13, 13, 0.1);
+    text-align: center;
+    padding: 10px 30px;
+    min-width: 200px;
+    border-radius: 5px;
+    width: 35%;
+    margin: 20px;
+    transition: all .4s ease-in-out;
+    position: absolute;
+    right: 10px;
+    display: none;
+}
+
+.show-snackbar{
+    display: block;
 }
